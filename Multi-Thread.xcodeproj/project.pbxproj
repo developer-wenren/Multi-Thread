@@ -14,6 +14,7 @@
 		512A21E51AE52CB10001952E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512A21E41AE52CB10001952E /* Images.xcassets */; };
 		512A21E81AE52CB20001952E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 512A21E61AE52CB20001952E /* LaunchScreen.xib */; };
 		512A21F41AE52CB30001952E /* Multi_ThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 512A21F31AE52CB30001952E /* Multi_ThreadTests.m */; };
+		51ED7AA81AE7932300F7EC71 /* WRDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED7AA71AE7932300F7EC71 /* WRDownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		512A21ED1AE52CB30001952E /* Multi-ThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multi-ThreadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		512A21F21AE52CB30001952E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512A21F31AE52CB30001952E /* Multi_ThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Multi_ThreadTests.m; sourceTree = "<group>"; };
+		512A21FD1AE52DE40001952E /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		51ED7AA61AE7932300F7EC71 /* WRDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRDownloadOperation.h; sourceTree = "<group>"; };
+		51ED7AA71AE7932300F7EC71 /* WRDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRDownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				512A21DC1AE52CB10001952E /* AppDelegate.m */,
 				512A21DE1AE52CB10001952E /* ViewController.h */,
 				512A21DF1AE52CB10001952E /* ViewController.m */,
+				51ED7AA61AE7932300F7EC71 /* WRDownloadOperation.h */,
+				51ED7AA71AE7932300F7EC71 /* WRDownloadOperation.m */,
 				512A21E11AE52CB10001952E /* Main.storyboard */,
 				512A21E41AE52CB10001952E /* Images.xcassets */,
 				512A21E61AE52CB20001952E /* LaunchScreen.xib */,
@@ -96,6 +102,7 @@
 		512A21D71AE52CB00001952E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				512A21FD1AE52DE40001952E /* libpthread.dylib */,
 				512A21D81AE52CB00001952E /* Info.plist */,
 				512A21D91AE52CB00001952E /* main.m */,
 			);
@@ -221,6 +228,7 @@
 			files = (
 				512A21E01AE52CB10001952E /* ViewController.m in Sources */,
 				512A21DD1AE52CB10001952E /* AppDelegate.m in Sources */,
+				51ED7AA81AE7932300F7EC71 /* WRDownloadOperation.m in Sources */,
 				512A21DA1AE52CB00001952E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +422,7 @@
 				512A21F91AE52CB30001952E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		512A21FA1AE52CB30001952E /* Build configuration list for PBXNativeTarget "Multi-ThreadTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				512A21FC1AE52CB30001952E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
